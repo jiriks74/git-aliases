@@ -6,7 +6,6 @@ alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add --interactive'
-alias galias='git_list_aliases'
 # Amend the most recent local commit:
 alias gam='git commit --amend -m' # Only change commit message (optionally 'git add' files)
 alias gama='git commit --amend -am' # Add all modified files and change commit message
@@ -264,38 +263,6 @@ function git_count_all() {
   git shortlog -sn | cat
   echo -n '+ _______________________________________\n\n  '
   git_count
-}
-
-# List all git aliases from the README:
-function git_list_aliases() {
-  filename=~/.oh-my-zsh/custom/plugins/git/README.md
-  from=$(grep -Fno '| **g** ' ${filename} | cut -f1 -d:)
-  stop=$(grep -no '&nbsp;' ${filename} | cut -f1 -d:)
-  to=$((stop - 2))
-
-  echo '_______________________________________________________________________________
-|             |                                                               |
-| Alias       | Command                                                       |
-|_____________|_______________________________________________________________|
-|             |                                                               |'
-
-  sed -n "${from},${to}p;${stop}q" ${filename} | # Take out table
-    tr -d '*\\' |    # Remove **bold** and \ escapes
-    sed 's/.$//' |   # Remove last '|' because its no longer lining up
-    while read -r line ; do
-      echo "${(r:78:)line}" # Pad spaces to 78 chars (zsh specific)
-    done |
-    sed 's/$/|/'     # Re-append final '|'
-
-  echo '|_____________|_______________________________________________________________|
-
-
-Note:
-This cheatsheet is optimized for memorability,
-and may not correspond literally with the actual aliases.
-
-If you want to see all alias implementations, run `alias`.
-If you want to see a specific implementation, run `which <alias/function>`.'
 }
 
 # Locate all commits in which a specific line of code (string) was first introduced:

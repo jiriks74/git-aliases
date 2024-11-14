@@ -41,7 +41,6 @@ plugins=(git)
 | **ga**          | git add                                                   |
 | **gaa**         | git add --all                                             |
 | **gai**         | git add --interactive                                     |
-| **galias**      | git_list_aliases                                          |
 | **gam**         | **g**it commit --**a**mend -**m**                         |
 | **gama**        | **g**it commit --**a**mend -**m** --**a**ll               |
 | **gan**         | **g**it commit --**a**mend --**n**o-edit                  |
@@ -187,7 +186,6 @@ plugins=(git)
 > [git.plugin.zsh](./git.plugin.zsh) or the
 > [repo's source code](https://github.com/davidde/git/blob/master/git.plugin.zsh).  
 > 
-> Alternatively, run `alias` to see *all* alias implementations,
-> or `galias` for this cheatsheet.  
+> Alternatively, run `alias` to see *all* alias implementations
 > If you want to see any specific implementation, simply run `which <alias/function>`.
 -------------------------------------------------------------------------------
