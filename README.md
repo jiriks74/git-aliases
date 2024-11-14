@@ -163,6 +163,13 @@ plugins=(git)
 | **gtl**         | git tag --list                                            |
 | **gtls**        | git tag --list \| cat                                     |
 | **gwch**        | git whatchanged -p                                        |
+| **gwa**         | git worktree add                                          |
+| **gwl**         | git worktree list                                         |
+| **gwlo**        | git worktree lock                                         |
+| **gwm**         | git worktree move                                         |
+| **gwp**         | git worktree prune                                        |
+| **gwr**         | git worktree remove                                       |
+| **gwu**         | git worktree unlock                                       |
 &nbsp;
 
 

@@ -190,6 +190,13 @@ alias gtl='git tag --list'
 alias gtls='git tag --list | cat'
 
 alias gwch='git whatchanged -p --date=format:"%A %B %d %Y at %H:%M" --pretty=format:"%n%n%C(yellow)%H%Creset%x09%C(bold green)%D%Creset%n%<|(40)%C(white)%ad%x09%an%Creset%n%n    %C(bold)%s%Creset%n%w(0,4,4)%+b%n"'
+alias gwa='git worktree add'
+alias gwl='git worktree list'
+alias gwlo='git worktree lock'
+alias gwm='git worktree move'
+alias gwp='git worktree prune'
+alias gwr='git worktree remove'
+alias gwu='git worktree unlock'
 
 
 # Functions
