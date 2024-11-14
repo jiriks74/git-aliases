@@ -126,6 +126,8 @@ plugins=(git)
 | **grhk**        | git_reset_head --keep                                     |
 | **grhs**        | git_reset_head --soft                                     |
 | **grb**         | git rebase                                                |
+| **grbc**        | git rebase --continue                                     |
+| **grbi**        | git rebase --interactive                                  |
 | **grbm**        | git rebase $(git_main_branch)                             |
 | **grem**        | git remote                                                |
 | **grema**       | git remote add                                            |
