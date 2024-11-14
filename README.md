@@ -59,11 +59,11 @@ plugins=(git)
 | **gbsr**        | git bisect reset                                          |
 | **gbss**        | git bisect start                                          |
 | **gc**          | git commit --verbose                                      |
-| **gcam**        | git commit -am                                            |
-| **gcame**       | git commit -am --allow-empty-message ""                   |
-| **gcamg**       | git commit -am --gpg-sign                                 |
-| **gcams**       | git commit -am --signoff                                  |
-| **gcem**        | git commit --allow-empty -m                               |
+| **gcam**        | git commit -a                                             |
+| **gcame**       | git commit -a --allow-empty-message ""                    |
+| **gcamg**       | git commit -a --gpg-sign                                  |
+| **gcams**       | git commit -a --signoff                                   |
+| **gcem**        | git commit --allow-empty                                  |
 | **gcf**         | git config                                                |
 | **gcfl**        | git config --list                                         |
 | **gcfls**       | git config --list \| cat                                  |

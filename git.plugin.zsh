@@ -7,8 +7,8 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add --interactive'
 # Amend the most recent local commit:
-alias gam='git commit --amend -m' # Only change commit message (optionally 'git add' files)
-alias gama='git commit --amend -am' # Add all modified files and change commit message
+alias gam='git commit --amend' # Only change commit message (optionally 'git add' files)
+alias gama='git commit --amend -a' # Add all modified files and change commit message
 alias gan='git commit --amend --no-edit' # Keep commit message (optionally 'git add' files)
 alias gana='git commit --amend --no-edit -a' # Add all modified files, but keep commit message
 alias gap='git add --patch'
