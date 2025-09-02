@@ -3,6 +3,8 @@
 
 alias g='git'
 
+alias groot='cd $(git rev-parse --show-toplevel)'
+
 alias ga='git add'
 alias gaa='git add --all'
 alias gai='git add --interactive'
